@@ -5861,7 +5861,7 @@ public function bessEvent1InviteAsk():void
 	output("You ask what it is exactly [bess.name] is so interested in. [bess.HeShe] seems interested in the fact that a war has broken out on one of the planets in the Eagle Nebula. It appears ethnic tensions have exploded, and the UGC were unable to stop things turning violent.");
 	
 	output("\n\n<i>“It’s so sad, "+ bessPCName() +". All those people suffering... would it have been solved if they had been provided with adequate breeding relief?”</i>");
-	if (bess.earType != GLOBAL.TYPE_HUMAN) output(" [bess.HisHer] [bess.ears] droop; [bess.sheHe]’s clearly thinking about the poor people involved.");
+	if (bess.earType != GLOBAL.TYPE_HUMAN) output(" [bess.HisHer] [bess.ears] droop; [bess.heShe]’s clearly thinking about the poor people involved.");
 	
 	output("\n\nYou explain to [bess.himHer] that it’s a tiny bit more complicated than the people involved being able to get their rocks off.");
 	
@@ -6180,7 +6180,7 @@ public function bessEvent3OwnPath():void
 
 	output("You tell [bess.name] that [bess.heShe] should decide [bess.hisHer] own path, no matter how hard it is, otherwise [bess.hisHer] choice will be less meaningful.");
 	
-	output("\n\nYou can tell by [bess.name]’s expression that [bess.heShe] was hoping you’d give [bess.hisHer] the answer. [bess.HeShe] pauses for a long time; [bess.heShe] appears as if [bess.sheHe]’s musing about what [bess.heShe]’s going to do. Even doing nothing is making a decision to follow [bess.hisHer] old ways.");
+	output("\n\nYou can tell by [bess.name]’s expression that [bess.heShe] was hoping you’d give [bess.hisHer] the answer. [bess.HeShe] pauses for a long time; [bess.heShe] appears as if [bess.heShe]’s musing about what [bess.heShe]’s going to do. Even doing nothing is making a decision to follow [bess.hisHer] old ways.");
 	
 	output("\n\nEventually though, [bess.name] does come to a decision. <i>“... I want people to be happy. If I don’t make people happy, administering sexual relief is meaningless. If the original founders of JoyCo didn’t want me to administer joy to the galaxy they wouldn’t have put it in their name or made it one of my directives.”</i>");
 	
@@ -11741,7 +11741,7 @@ public function bessGetCunni():void
 		if (pc.genitalSpot <= 1)
 		{
 			output("\n\n<i>“Roll over and on your back, "+ bessPCSexName() +"!”</i> Your second set of instructions comes like a whip-crack, and you immediately comply.");
-			if (pc.isBiped()) output(" Rolling on to your back like an animal, [bess.sheHe] then forcibly spreads your legs apart.");
+			if (pc.isBiped()) output(" Rolling on to your back like an animal, [bess.heShe] then forcibly spreads your legs apart.");
 			
 			output("\n\nYou furiously flush as your shamefully dewy mound is exposed. [bess.HeShe] clearly notices too, a glimmer of amusement in [bess.hisHer] sharp [bess.eyeColor] eyes. You try not to wiggle with pleasure under [bess.hisHer] gaze, feeling it penetrate your very soul.");
 			
@@ -11919,7 +11919,7 @@ public function bessMilkers(opts:Array = null):void
 	{
 		flags["BESS_MILKERS_TIMES"] = 1;
 
-		output("\n\n<i>“Wha- use a milker? Like a pregnant New Texan cow...?”</i> [bess.name] blushes <i>hard</i> at your suggestion. At the same time [bess.sheHe] trembles with excitement as you pull out the object in question.");
+		output("\n\n<i>“Wha- use a milker? Like a pregnant New Texan cow...?”</i> [bess.name] blushes <i>hard</i> at your suggestion. At the same time [bess.heShe] trembles with excitement as you pull out the object in question.");
 
 		output("\n\nDespite any verbal objection,");
 		if (bess.isChestGarbed()) output(" [bess.name] slips off [bess.hisHer] [bess.UpperGarments]. [bess.HeShe] then");
@@ -12126,7 +12126,7 @@ public function bessIntimateGiveDoggy(fromEvent:Boolean = false):void
 	}
 	else
 	{
-		output("\n\nYour lips pull apart as both of your breathing comes out in short desperate gasps. [bess.name] gazes at you with [bess.hisHer] beautiful [bess.eyeColor] eyes. <i>“... Make love to me, [bNamePC]. I want you inside of me.”</i>");
+		output("\n\nYour lips pull apart as both of your breathing comes out in short desperate gasps. [bess.name] gazes at you with [bess.hisHer] beautiful [bess.eyeColor] eyes. <i>“... Make love to me, [pc.name]. I want you inside of me.”</i>");
 		
 		output("\n\n[bess.HeShe] shifts herself so your [pc.cockhead] is lined up with [bess.hisHer]");
 		if (bess.hasVagina()) output(" wetness");
@@ -12226,7 +12226,8 @@ public function bessIntimateGetDoggy(fromEvent:Boolean = false):void
 	output("\n\nThe delicious smell of synthetic vanilla, [bess.hisHer] particular scent, fills your senses. You’re utterly wrapped up in [bess.hisHer] in more ways than you can count. There is nothing other than [bess.name] as all else is swept away by the power of [bess.hisHer] sweetly pressing lips.");
 
 	output("\n\nYour make-out session naturally grows from soft sensuality to frantic tongue dancing as your lungs near their limit. Finally out of oxygen, you stubbornly pull away from [bess.name] to take short, desperate gasps of the sweet, vanilla-scented air. [bess.name] gazes at you with [bess.hisHer] beautiful [bess.eyeColor] eyes.");
-	if (pc.genitalSpot <= 1) output(" Not a word needs to be said as [bess.heShe] spreads open your [pc.legs] wide until your nethers are completely exposed./Else: Not a word needs to be said as [bess.heShe] positions [bess.himHer]self to enter you.");
+	if (pc.genitalSpot <= 1) output(" Not a word needs to be said as [bess.heShe] spreads open your [pc.legs] wide until your nethers are completely exposed.");
+	else output(" Not a word needs to be said as [bess.heShe] positions [bess.himHer]self to enter you.");
 
 	output("\n\n[bess.HeShe] presses the head of [bess.hisHer] [bess.cock] against your");
 	if (pc.hasVagina()) output(" lower lips");
@@ -12243,7 +12244,7 @@ public function bessIntimateGetDoggy(fromEvent:Boolean = false):void
 	
 	output("\n\n[bess.HeShe] begins to rock [bess.hisHer] hips; you moan and cling tightly to [bess.hisHer] pulsing phallus. Every single inch of [bess.himHer] is hitting the exact right spot, It all feels so incredibly sensual and intense. Before you know it, you’re cumming already. You tremble and cling to [bess.hisHer] as you let out a shuddering moan.");
 
-	output("\n\nEven as you come, your lover does not let up. [bess.name] now sets into a wet grind, probing every inch of your [pc.vagOrAss "+ vagIdx +"] with a practiced hip roll You frantically reciprocate, grinding your rump into [bess.hisHer] hips with a heated fervor until you’re a moaning, shuddering mess. [bess.HisHer] breathing heavy and grinding near-predatory, [bess.name] grabs your [pc.hips] and huskily moans, holding herself deep inside your hungry hole.");
+	output("\n\nEven as you come, your lover does not let up. [bess.name] now sets into a wet grind, probing every inch of your [pc.vagOrAss "+ vagIdx +"] with a practiced hip roll. You frantically reciprocate, grinding your rump into [bess.hisHer] hips with a heated fervor until you’re a moaning, shuddering mess. [bess.HisHer] breathing heavy and grinding near-predatory, [bess.name] grabs your [pc.hips] and huskily moans, holding herself deep inside your hungry hole.");
 	if (pc.isBiped() && pc.hasKnees()) output(" Your [pc.legs] instinctively lock in a crisscross position behind [bess.hisHer] and you feel your partner tense up.");
 	
 	output("\n\nFinally [bess.name] can’t hold out much longer as you wildly stroke [bess.hisHer] cock with your inner muscles. Without warning, you feel [bess.hisHer] thick sticky cum shooting inside your");
